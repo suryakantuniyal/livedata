@@ -6,6 +6,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -64,12 +65,11 @@ public class MainActivity extends AppCompatActivity {
 
     // observes livedata from current activity
     public void observeLiveData(){
-        customViewModel
-                .getLiveData()
-                .observe(this, new Observer<Integer>() {
+        customViewModel.getLiveData().observe(this, new Observer<Integer>() {
                     @Override
                     public void onChanged(@Nullable Integer integer) {
                         displayTextView.setText(integer.toString());
+                        Log.d("TAG", String.valueOf(displayTextView));
                     }
                 });
 

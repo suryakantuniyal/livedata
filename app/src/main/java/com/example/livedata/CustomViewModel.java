@@ -7,8 +7,7 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 
 public class CustomViewModel extends AndroidViewModel {
-    private MutableLiveData<Integer> liveData =
-            new MutableLiveData<>();
+    private MutableLiveData<Integer> liveData = new MutableLiveData<>();
 
     public CustomViewModel(@NonNull Application application) {
         super(application);
