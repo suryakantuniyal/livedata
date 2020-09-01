@@ -12,9 +12,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    public CustomViewModel customViewModel;
-    public TextView displayTextView;
-    public Button testButton;
+    private CustomViewModel customViewModel;
+    private TextView displayTextView;
+    private Button testButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
